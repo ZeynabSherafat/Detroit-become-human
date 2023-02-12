@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detroit</title>
+    <style>
+      @import url("https://fonts.cdnfonts.com/css/gotham-book");
+      body {
+        background-color: #272932;
+      }
+      h1 {
+        text-align: center;
+        font-size: 40px;
+        font-family: "Gotham Book", sans-serif;
+
+        color: white;
+      }
+      h2 {
+        text-align: center;
+        font-size: 30px;
+        font-family: "Gotham Book", sans-serif;
+
+        line-height: 20px;
+        color: white;
+      }
+      img {
+        display: block;
+        margin: 35px auto;
+
+        max-width: 500px;
+        border-radius: 10px;
+      }
+
+      a {
+        font-size: 12px;
+        font-family: "Gotham Book", sans-serif;
+        color: #222831;
+        text-decoration: none;
+        transition: ease-in-out;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      hr {
+        max-width: 550px;
+        border-color: #222831;
+      }
+
+      .text {
+        font-family: "Gotham Book", sans-serif;
+
+        text-align: center;
+        line-height: 25px;
+        margin: 30px;
+        color: white;
+      }
+      .head {
+        font-family: "Gotham Book", sans-serif;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+      }
+
+      .start {
+        display: block;
+        background-color: #222831;
+        color: white;
+        margin: 60px auto;
+        padding: 15px 20px;
+        border-radius: 10px;
+        border: solid #222831 3px;
+        box-shadow: 1px 3px 10px #222831;
+        font-size: 14px;
+        font-family: "Gotham Book", sans-serif;
+        font-weight: 600;
+        transition: all 160ms ease-in-out;
+      }
+      .start:hover {
+        background-color: white;
+        color: #222831;
+        border: solid white 3px;
+      }
+      .footer {
+        font-family: "Gotham Book", sans-serif;
+        line-height: 1px;
+        text-align: center;
+        font-size: 13px;
+        color: white;
+      }
+      .box {
+        border: none gray 2px;
+        max-width: 600px;
+        display: block;
+        margin: 30px auto;
+        padding: 15px 0px 15px 0px;
+        border-radius: 10px;
+        background: radial-gradient(
+          circle at -3.7% -5%,
+          rgb(113, 213, 225) 0.3%,
+          rgb(73, 146, 226) 90.5%
+        );
+      }
+      .available {
+        font-family: "Gotham Book", sans-serif;
+
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 100px;
+        text-align: center;
+        color: white;
+        width: 80%;
+      }
+
+      .ps {
+        width: 50%;
+        float: left;
+        font-weight: 700;
+      }
+
+      .pc {
+        width: 50%;
+        float: right;
+        font-weight: 700;
+      }
+      .icons {
+        width: 60px;
+        margin-top: -5px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h1>DETROIT</h1>
+      <h2>BECOME HUMAN</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/055/685/original/detroit-become-human-5k_1537692817.jpg?1669736128"
+        alt="Kara"
+      />
+      <hr />
+      <p class="text">
+        <strong>Detroit: Become Human</strong> is the latest title in
+        development by Quantic Dream that expands on the studio’s legacy of
+        gripping, narrative driven experiences (<em
+          >Fahrenheit/Heavy Rain™/ BEYOND: Two Souls™</em
+        >). Discover what it really means to be human in a powerful, emotional
+        journey made of choice and consequences.
+        <br />
+        Set in Detroit City during the year 2036, the city has been revitalized
+        by the invention and introduction of Androids into everyday life. But
+        when Androids start behaving as if they are alive, events begin to spin
+        out of control. Step into the roles of the story’s pivotal three
+        playable characters, each with unique perspectives as they face their
+        new way of life.
+        <br />
+        In this ambitiously bending and thrilling narrative, every choice and
+        action will not only determine the character’s fate, but that of the
+        entire city and possibly beyond.
+        <span class="link">
+          <a
+            href="https://www.quanticdream.com/en/detroit-become-human"
+            target="_blank"
+            >Learn More On Quantic Dream</a
+          >
+        </span>
+      </p>
+      <hr />
+      <div class="available">
+        <p class="head">Available on</p>
+
+        <p class="ps">
+          <img
+            class="icons"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/055/695/original/3069713_circle_gaming_playstation_round_icon_icon.png?1669740152"
+            alt="windows"
+          />
+          PlayStation® 4
+        </p>
+        <p class="pc">
+          <img
+            class="icons"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/055/906/original/Size.png?1669892924"
+            alt="windows"
+          />
+          PC
+        </p>
+      </div>
+
+      <button class="start">Let's get started!</button>
+      <p class="footer">Coded by Zeynab Sherafat</p>
+    </div>
+    <script>
+      function ask() {
+        let name = prompt("Hi there! 👋 What's your name?");
+        let age = prompt("How old are you? 😊");
+        let email = prompt("And what is your email address? 💻");
+        if (age >= 15) {
+          alert(
+            "Thank you" +
+              " " +
+              name +
+              "!" +
+              "🙏" +
+              "We'll send the download link to your email."
+          );
+        } else {
+          alert(
+            "Sorry, " +
+              name +
+              "!" +
+              " " +
+              "You're a little young for playing this game." +
+              "😭"
+          );
+        }
+      }
+
+      let work = document.querySelector(".start");
+      work.addEventListener("click", ask);
+    </script>
+  </body>
+</html>
